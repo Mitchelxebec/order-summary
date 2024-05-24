@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    opacity: 5;
+}
+
+h3,
+h4,
+p,
+button,
+small,
+a {
+    font-family: "Red Hat Display";
+}
+
+.main-body {
+    height: 495px;
+    width: 24%;
+    background-color: white;
+    margin: 70px auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px hsl(224, 23%, 55%);
+}
+
+.main-body>img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.write-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+h3 {
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.explain-tire {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    width: 290px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    height: 65px;
+    width: 285px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.plan-write>p {
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+}
+
+a:hover {
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    height: 39px;
+    width: 280px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    box-shadow: 8px 8px 10px hsl(224, 23%, 55%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+
+small {
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    justify-content: center;
+}
+
+small:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:1000px) {
+    .main-body {
+        width: 300px;
+    }
+
+    .explain-tire {
+        width: 250px;
+    }
+
+    .plan {
+        width: 250px;
+    }
+
+    button {
+        width: 250px;
+    }
+}
